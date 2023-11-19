@@ -85,7 +85,7 @@ const Mainbody = () => {
               <div className="text-[16px]">Оршин суугаа хаяг</div>
               <div className="text-[15px]">
                 <div className="text-[#5C72AB]">Хаяг:</div>
-                <div className="text-[#002468]">-</div>
+                <div className="text-[#002468]">Mongolia</div>
               </div>
             </div>
           </div>
