@@ -1,14 +1,18 @@
 import "./App.css";
-import Header from "../src/components/header";
-import Header2 from "../src/components/header2";
-import Mainbody from "./components/mainbody";
+import Home from "./page/home";
+import Login from "./page/login";
+import Signin from "./page/signin";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Header2 />
-      <Mainbody />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
