@@ -26,9 +26,9 @@ const Login = () => {
       </div>
       <button
         className="w-[100px] h-[50px] bg-light-blue-700 mt-10 rounded-xl border-[1px] border-solid border-black"
-        onClick={() => {
-          navigate("/home");
-        }}
+        // onClick={() => {
+        //   navigate("/home");
+        // }}
       >
         Login
       </button>

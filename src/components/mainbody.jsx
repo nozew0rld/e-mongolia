@@ -3,9 +3,15 @@ import logo2 from "../img/logo2.svg";
 import theme from "../img/theme.png";
 import me from "../img/me.jpeg";
 import stamp from "../img/stamp.webp";
+import family from "../img/family.svg";
+import car from "../img/car.svg";
+import company from "../img/building.svg";
+import blood from "../img/blood.svg";
+
+import { IoIosInformationCircleOutline } from "react-icons/io";
 const Mainbody = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-[100px]">
       <div className="pt-10 flex-col">
         <div className="">
           <img
@@ -89,6 +95,72 @@ const Mainbody = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-[350px] h-[200px] border-solid border-[1px] bg-[#F9FCFE] border-[#EBEBEB] rounded-lg mt-5">
+          <div className="flex gap-3 mt-4 ml-5">
+            <img src={family} alt="" className="h-7 w-7" />
+            <div className="font-roboto font-lightbold">
+              Өрхийн гишүүдийн мэдээлэл
+            </div>
+          </div>
+          <div className="flex gap-2 ml-5 mt-3">
+            <div className="font-roboto text-sm">Ам бүлийн тоо: </div>
+            <div className="font-roboto text-sm text-[#4986FF]">3</div>
+          </div>
+          <div className="font-roboto flex-col ml-5">
+            <div className="flex gap-2 mt-3">
+              <div>ЧУЛУУНБААТАР</div>
+              <div className="text-[#4986FF]">СОДБАЯР</div>
+            </div>
+            <div className="flex gap-2 mt-3">
+              <div>ЭРДЭНЭБИЛЭГ</div>
+              <div className="text-[#4986FF]">УНДРАХ</div>
+            </div>
+            <div className="flex gap-2 mt-3">
+              <div>БАТМӨНХ</div>
+              <div className="text-[#4986FF]">ОРГИЛ</div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[350px] h-[150px] border-solid border-[1px] bg-[#F9FCFE] border-[#EBEBEB] rounded-lg mt-5">
+          <div className="flex gap-3 mt-4 ml-5">
+            <img src={car} alt="" className="h-7 w-7" />
+            <div className="font-roboto font-lightbold">Тээврийн хэрэгсэл</div>
+          </div>
+          <div className="flex">
+            <div className="h-[80px] w-[50px] rounded-lg bg-[#387CFF] mt-3 ml-3"></div>
+            <div className="w-[320px] h-[80px] bg-[#EBF3FF] rounded-r-[10px] rounded-l-[5px] mt-3 -ml-[46px]">
+              <IoIosInformationCircleOutline className="h-[30px] w-[30px] text-[#4986FF] mt-5 ml-4" />
+              <div className="w-[250px] font-roboto text-sm ml-16 -mt-7">
+                Таны нэр дээр тээврийн хэрэгсэл бүртгэлгүй байна.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[350px] h-[150px] border-solid border-[1px] bg-[#F9FCFE] border-[#EBEBEB] rounded-lg mt-5">
+          <div className="flex gap-3 mt-4 ml-5">
+            <img src={company} alt="" className="h-7 w-7" />
+            <div className="font-roboto font-lightbold">Компаниуд</div>
+          </div>
+          <div className="flex">
+            <div className="h-[80px] w-[50px] rounded-lg bg-[#387CFF] mt-3 ml-3"></div>
+            <div className="w-[320px] h-[80px] bg-[#EBF3FF] rounded-r-[10px] rounded-l-[5px] mt-3 -ml-[46px]">
+              <IoIosInformationCircleOutline className="h-[30px] w-[30px] text-[#4986FF] mt-5 ml-4" />
+              <div className="w-[250px] font-roboto text-sm ml-16 -mt-7">
+                Таны нэр дээр компани бүртгэлгүй байна.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[350px] h-[130px] border-solid border-[1px] bg-[#F9FCFE] border-[#EBEBEB] rounded-lg mt-5">
+          <div className="flex gap-3 mt-4 ml-5">
+            <img src={blood} alt="" className="h-7 w-7" />
+            <div className="font-roboto font-lightbold">
+              Цусны бүлгийн мэдээлэл
+            </div>
+          </div>
+          <div className="font-roboto ml-5 mt-4">Цусны бүлэг (ABO):</div>
+          <div className="font-roboto ml-5 mt-3">Келл (K):</div>
         </div>
       </div>
     </div>
